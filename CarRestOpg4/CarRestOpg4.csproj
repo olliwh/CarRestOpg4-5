@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="CarCLOpg1">
+      <HintPath>..\..\CarCLOpg1\CarCLOpg1\bin\Debug\net6.0\CarCLOpg1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRestOpg4", "CarRestOpg4\CarRestOpg4.csproj", "{646E3465-952C-4050-9E29-B2DD4CF0F776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRestOpg4Tests", "CarRestOpg4Tests\CarRestOpg4Tests.csproj", "{3EF48511-60A7-4309-AA59-B8B5255F5CC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{646E3465-952C-4050-9E29-B2DD4CF0F776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{646E3465-952C-4050-9E29-B2DD4CF0F776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{646E3465-952C-4050-9E29-B2DD4CF0F776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{646E3465-952C-4050-9E29-B2DD4CF0F776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EF48511-60A7-4309-AA59-B8B5255F5CC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EF48511-60A7-4309-AA59-B8B5255F5CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EF48511-60A7-4309-AA59-B8B5255F5CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EF48511-60A7-4309-AA59-B8B5255F5CC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD2EBA84-8248-4C30-A908-1C21DAEA021C}
+	EndGlobalSection
+EndGlobal
