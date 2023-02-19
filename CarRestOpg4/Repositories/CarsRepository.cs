@@ -16,15 +16,23 @@ namespace CarRestOpg4.Repositories
         }
         public List<Car> GetAll()
         {
-            return new List<Car>(Data);
+            List<Car> list = new List<Car>(Data);
+            foreach (var item in list)
+            {
+                item.Validate();
+            }
+            return list;
         }
         public Car? GetById(int id)
         {
-            return Data.Find(x => x.Id == id);
+            Car? car = Data.Find(x => x.Id == id);
+            car?.Validate();
+            return car;
         }
         public Car Add(Car car)
         {
             car.Id = _nextId++;
+            car.Validate();
             Data.Add(car);
             return car;
         }
@@ -32,6 +40,7 @@ namespace CarRestOpg4.Repositories
         {
             Car? carToDelete = GetById(id);
             if (carToDelete == null) return null;
+            carToDelete.Validate();
             Data.Remove(carToDelete);
             return carToDelete;
         }
@@ -39,6 +48,7 @@ namespace CarRestOpg4.Repositories
         {
             Car? carToUpdate = GetById(id);
             if (carToUpdate == null) return null;
+            car.Validate();
             carToUpdate.Price = car.Price;
             carToUpdate.Model = car.Model;
             carToUpdate.LicensePlate = car.LicensePlate;
