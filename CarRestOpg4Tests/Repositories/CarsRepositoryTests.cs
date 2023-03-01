@@ -22,13 +22,11 @@ namespace CarRestOpg4.Repositories.Tests
             List<Car> cars = _repo.GetAll();
             Assert.IsNotNull(cars);
             Assert.AreEqual(2,cars.Count);
-            var hs = new HashSet<Car>();
+            var hs = cars.ToHashSet();
 
-            foreach (var c in cars)
-            {
-                Assert.IsInstanceOfType(c, typeof(Car));
-                hs.Add(c);
-            }
+
+            Assert.IsInstanceOfType(cars[0], typeof(Car));
+           
             Assert.AreEqual(hs.Count,cars.Count);
         }
 
