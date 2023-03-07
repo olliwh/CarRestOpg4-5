@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="CarCLOpg1">
       <HintPath>..\..\CarCLOpg1\CarCLOpg1\bin\Debug\net6.0\CarCLOpg1.dll</HintPath>
     </Reference>
